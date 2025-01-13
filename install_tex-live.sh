@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set working directory
-cd /tmp
+cd ~/Downloads || exit
 
 # Download the TeX Live installer
 curl -L -o install-tl-unx.tar.gz https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
@@ -10,7 +10,7 @@ curl -L -o install-tl-unx.tar.gz https://mirror.ctan.org/systems/texlive/tlnet/i
 zcat < install-tl-unx.tar.gz | tar xf -
 
 # Change to the installer directory
-cd install-tl-*
+cd install-tl-20* || exit
 
 # Run the installer non-interactively
 sudo perl ./install-tl --no-interaction

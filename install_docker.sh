@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install required packages
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg

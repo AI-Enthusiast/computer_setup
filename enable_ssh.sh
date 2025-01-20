@@ -9,5 +9,3 @@ sudo systemctl status ssh
 
 # allow ssh through firewall
 sudo ufw allow ssh
-
-
